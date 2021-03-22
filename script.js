@@ -11,6 +11,8 @@ else {
 
 var favoriteLanguage = prompt("what is your favorite language");
 
+function gitfavoriteLanguage(favoriteLanguageforuser) {
+
 if (favoriteLanguage == "english") {
 
     document.write("<img src='https://www.csss.es/wp-content/uploads/2018/10/English-languages.jpg' alt='english' />");
@@ -26,10 +28,15 @@ else if (favoriteLanguage == "arabic") {
 while (favoriteLanguage !== "english" && favoriteLanguage !== "arabic") {
     favoriteLanguage = prompt("please input only English or Arabic");
 }
+}
+gitfavoriteLanguage(favoriteLanguage);
+
 
 var yourRate = prompt("how much do you rate your languages");
 var result = " ";
 var paint = " ";
+
+var gityourRate = function (yourRate) {
 
 if (yourRate <= 10 && favoriteLanguage == "english") {
     paint = " <img src='https://www.csss.es/wp-content/uploads/2018/10/English-languages.jpg' alt='english'> ";
@@ -43,3 +50,5 @@ for (var i = 0; i < yourRate; i++){
 }
 document.write(result); 
 console.log(i)
+}
+gityourRate (yourRate);
